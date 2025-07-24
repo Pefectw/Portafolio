@@ -1,0 +1,333 @@
+body{
+
+    background: #1b0534; 
+
+    width: 50%;
+
+    margin: auto;
+
+    font-family: "Afo";
+
+    color: #ffffff
+}
+
+
+html{
+
+    scroll-padding-top: 6rem;
+
+}
+
+
+header{
+
+    margin-bottom: 25%;
+
+    position: sticky; 
+
+    top: 0.5rem;
+    
+    z-index: 10;  
+}
+
+
+p{
+
+    font-size: 1.3rem
+}
+
+
+.Important-Words, .Important-Words-Proyects{
+
+    color: #40E0D0
+
+}
+
+
+.Scroll-Bar-Navigation{
+
+    background: #250d46;
+
+    padding: .1px;
+
+    border-radius: 9999px;
+
+    transition: .3s ease-in-out
+}
+
+
+ul{
+
+    display: flex;
+
+    justify-content: space-evenly
+}
+
+
+li{
+
+    color: #fff;
+
+    list-style: none;
+
+    font-size: 1.3rem
+}
+
+
+.Links-Navigation{
+
+    color: #ffffff;
+
+    text-decoration: none
+}
+
+
+.Link-Contact:hover, .Links-Navigation:hover{
+
+    color: #40E0D0
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+.Profile-Photo{
+
+    width: 7rem;
+
+    height: 7rem;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 .3rem #abb2b9
+}
+
+
+h1{
+
+    font-size: 3rem;
+
+    margin: 0
+}
+
+
+.Paragraph-Presentation{
+
+    font-size: 1.4rem;
+    
+    margin-top:.5rem
+}
+
+
+.Encapsulated-Links{
+
+    display: flex;
+
+    gap: 1rem
+}
+
+
+.Link-Contact{
+
+  display: flex; 
+  
+  align-items: center;
+
+  text-decoration: none;
+
+  color: #fff;
+
+  gap: .5rem;
+
+  font-size: 1.2rem;
+
+  background: #2C1A4A;
+
+  border-radius: 9800px;
+
+  padding: .5rem .9rem .5rem .9rem;
+
+  border: #1b0534 .2px solid
+}
+
+
+.Link-Contact:hover{
+
+    border: #fff .2px solid
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+section{
+
+    margin-bottom: 25%
+}
+
+
+.Section-Header{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .8rem;
+
+    margin: 0;
+
+    padding: 0%
+}
+
+
+.Section-Icon{
+
+    width: 2.5rem;
+
+    height: 2.5rem
+}
+
+
+h2{
+
+    font-size: 2.6rem;
+
+    text-shadow: 0 0 .1rem #fff;
+
+    margin: 0
+}
+
+
+h3{
+
+    font-size: 1.8rem;
+
+    margin-bottom: .8rem;
+
+    text-shadow: 0 0 .1rem #E6E6FA
+}
+
+
+.Image-Project{
+
+    width: 40%;
+
+    height: 15.3rem;
+
+    border-radius: 2%;
+
+    margin-right: 5%;
+
+    margin-top: 6%;
+
+    box-shadow: #1b0534 0 0 .3rem ;
+}
+
+
+.Paragraph-Section-Proyects{
+
+    font-size: 1.2rem
+}
+
+
+.Section-Proyects{
+
+    display: flex;
+
+    border-radius: 1.5%;
+
+    padding: .8rem 3rem 2rem 3rem;
+
+    margin-top: 5%;
+
+    background: #270852
+    
+}
+
+
+.Section-Proyects:hover{
+
+    box-shadow: 0 0 .2rem #E6E6FA;
+}
+
+
+.Icons-Links{
+
+    width: 1.5rem;
+
+    height: 1.5rem;
+
+}
+
+.Location-Info{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .5rem;
+
+    margin: 5% 0 0 75%
+}
+
+
+
+.Skills-Grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3,.2fr);
+
+    width: fit-content;
+
+    margin: auto;
+
+    margin-top: 7%;
+
+    border-radius: 20%
+}
+
+
+time, .Location{
+
+    color: #abb2b9;
+    
+    font-size: 1.1rem;
+}
+
+
+.Skill-Icon{
+
+    background: #270852 ;
+
+    padding: 2rem;
+
+    border-radius: 2%
+}
+
+
+.Button-Paused{
+
+    fill: #abb2b9
+}
+
+
+#Button-Pause{
+
+    background: none;
+
+    outline: none;
+
+    border: none;
+
+    display: block;
+
+    margin: auto;
+
+    margin-top: 7%
+}
+
+
+.Phrase{
+
+    text-align: center;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 8%
+}
