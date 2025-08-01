@@ -111,13 +111,14 @@ h1{
 
 .Image-Project{
 
-    width: 40%;
+    width: 90%;
+    
 
     border-radius: 5%;
 
     box-shadow: 0 0  .5rem #1b0534;
 
-    margin-top: 6%
+    margin-top: 11%
 }
 
 
@@ -236,7 +237,9 @@ h3{
 
     font-size: 1.2rem;
 
-    text-wrap: pretty
+    text-wrap: pretty;
+
+    margin-bottom: 7%;
 }
 
 
@@ -627,6 +630,19 @@ input:focus, textarea:focus, .Button-Send:hover{
         
         margin-top: 10%;
     }
+
+    form{
+
+        width: 75%;
+    }
+
+    .Button-Send{
+
+        padding: .3rem 1rem .3rem 1rem;
+
+        width: 40%;
+
+    }
 }
 
 
@@ -651,6 +667,8 @@ input:focus, textarea:focus, .Button-Send:hover{
     .Image-Project{
 
         width: 100%;
+
+        border-radius: 3%;
     }
 
     
@@ -681,6 +699,11 @@ input:focus, textarea:focus, .Button-Send:hover{
         margin-top: 5%;
 
         gap: 7rem
+    }
+
+    form{
+
+        width:70% ;
     }
 }
 
@@ -728,5 +751,10 @@ input:focus, textarea:focus, .Button-Send:hover{
         gap: 7rem
     }
 
+
+    form{
+
+        width: 65%;
+    }
    
 }

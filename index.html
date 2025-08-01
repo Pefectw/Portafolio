@@ -104,7 +104,19 @@
 
         <section class="Section-Proyects">
 
-            <img src="/Images/PhotoPage.png" alt="" class="Image-Project">
+            <Picture>
+
+                <source srcset="/Images/PhotoPage.png" media="(min-width: 1400px)" class="Image-Project">
+
+                <source srcset="/Images/Captur.jpg" media="(min-width: 360px)" class="Image-Project">
+
+
+
+                <img src="/Images/PhotoPage.png" alt="" class="Image-Project">
+
+            </Picture>
+
+
             <article>
             
                 <h3> Market Mallorca - Plataforma E-commerce para Supermercado </h3>
@@ -226,11 +238,9 @@
 
         <section class="Section-Contacts">
 
-            <form action="">
+            <form method="POST" data-netlify="true">
 
                 <h3 class="Title-Form"> ¡Hablemos!</h3>
-
-            
 
                 <label> Nombre Completo: 
                     <input type="text" name="nombre" required >
