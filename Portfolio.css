@@ -112,7 +112,6 @@ h1{
 .Image-Project{
 
     width: 90%;
-    
 
     border-radius: 5%;
 
@@ -427,7 +426,7 @@ textarea{
 
 input:focus, textarea:focus, .Button-Send:hover{
 
-    box-shadow: 0 0 .2rem #abb2b9;
+    box-shadow: 0 0 .3rem #abb2b9
 }
 
 .Button-Send{
@@ -445,6 +444,8 @@ input:focus, textarea:focus, .Button-Send:hover{
     font-family: "Afo";
 
     background: #fff;
+
+    color: #000;
 
     cursor: pointer;
 
@@ -682,6 +683,12 @@ input:focus, textarea:focus, .Button-Send:hover{
        padding-inline-start: 0% 
     }
 
+    p{
+
+        text-wrap: pretty 
+    }
+
+    
    
     .a {
 
@@ -722,6 +729,9 @@ input:focus, textarea:focus, .Button-Send:hover{
         width: 100%;
     }
     
+    p{
+        text-wrap: pretty;
+    }
 
     h1{
 
