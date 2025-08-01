@@ -38,12 +38,9 @@ window.addEventListener('scroll', () => {
 })
 
 
-const BotonControlAnimacion = document.getElementById('Button-Pause')
-
-const ButtonPaused = document.getElementById('Button-Paused')
+const BotonControlAnimacion = document.getElementById('Button-Restart')
 
 
-    // Tween de la sección de Habilidades 
     const Animacion = gsap.to('.Skills-Grid  svg', {
 
         duration: 3,
@@ -60,33 +57,43 @@ const ButtonPaused = document.getElementById('Button-Paused')
 
             yoyo: true,
 
-            from: 'random'
+            from: 'end'
         }
 })
 
-    Animacion.pause()
-
 BotonControlAnimacion.addEventListener('click', () =>{
 
-    if (Animacion.paused()) {
-        
-        Animacion.resume();
+    Animacion.restart();
 
-        ButtonPaused.classList.remove('Button-Paused')
-
-    } else {
-
-        Animacion.pause();
-
-        ButtonPaused.classList.add('Button-Paused')
-
-        
-    }
-   
 })
 
 
 
+// 1. Usa gsap.utils.toArray para obtener TODOS los elementos <h2> en tu página
+gsap.utils.toArray('h2').forEach(h2Element => {
+    // 2. Para CADA h2 encontrado, crea una nueva instancia de SplitText
+    const splitH2 = new SplitText(h2Element, {
+        type: 'chars' // Divide el h2 actual en caracteres
+    });
+
+    // 3. Crea una animación de GSAP para los caracteres de ESE h2
+    gsap.from(splitH2.chars, {
+        autoAlpha: 0, // Inicia invisible
+        stagger: .1, // Stagger (retraso) entre cada carácter
+        duration: 1, // Duración total de la animación de los caracteres de ese h2
+        ease: "power1.out", // Suavidad de la animación
+        scrollTrigger: {
+            // ¡CLAVE! El trigger es el h2Element actual en la iteración.
+            // Esto significa que CADA H2 tendrá su propio punto de activación.
+            trigger: h2Element,
+            start: 'top bottom', // La animación empieza cuando la parte superior del h2 entra por la parte inferior de la pantalla
+            once: true,          // La animación se ejecuta solo una vez para cada h2
+            // markers: true,     // Descomenta para depurar: verás las marcas de ScrollTrigger para CADA h2
+            // Si quieres un pequeño retraso ANTES de que empiece a escribir el H2 una vez en pantalla:
+            // delay: 0.2 // Esto añadiría un retraso de 0.2s después de que el trigger se activa
+        }
+    });
+});
 
 
 
