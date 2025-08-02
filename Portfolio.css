@@ -538,6 +538,11 @@ input:focus, textarea:focus, .Button-Send:hover{
 
         width: 90%
     }
+
+    header{
+
+        width: 95%;
+    }
     
     .Section-Proyects{
 
@@ -650,6 +655,10 @@ input:focus, textarea:focus, .Button-Send:hover{
         width: 80%;
     }
 
+    header{
+
+        width: 95%;
+    }
 
     .Section-Proyects{
 
@@ -717,6 +726,10 @@ input:focus, textarea:focus, .Button-Send:hover{
         flex-direction: column;
     }
 
+     header{
+
+        width: 95%;
+    }
 
     .Image-Project{
 
