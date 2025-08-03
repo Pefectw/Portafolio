@@ -8,7 +8,8 @@ body{
 
     font-family: "Afo";
 
-    color: #ffffff
+    color: #ffffff;
+
 }
 
 
@@ -27,7 +28,7 @@ header{
     
     z-index: 10;
 
-    width: 80%;
+    width: 85%;
 
     margin: auto;
 }
@@ -41,13 +42,15 @@ header{
 
 .Scroll-Bar-Navigation{
 
-    background: #250d46;
+    background: #2C1A4A;
 
     padding: .1px;
 
     border-radius: 9999px;
 
-    transition: .3s ease-in-out
+    transition: .3s ease-in-out;
+
+    
 }
 
 
@@ -114,17 +117,50 @@ h1{
 
 .Image-Project{
 
-    width: 90%;
+    width:100%;
 
-    border-radius: 5%;
+    height: auto;
+
+    border-radius: 1%;
 
     box-shadow: 0 0  .5rem #1b0534;
 
-    margin-top: 11%
+    
+   
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    
+
+    
 }
 
 
-.Encapsulated-Links, .Encapsulated-Links-Proyects{
+.Image-Project:hover {
+    transform: translateY(-3px); /* Se mueve 3px hacia arriba */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* La sombra se intensifica */
+}
+
+.a {
+
+        display: block; 
+
+        width: 100%
+}
+
+.Encapsulated-Links-Proyects{
+
+        width: fit-content; 
+
+        display: flex;
+
+        margin: 0 auto;   
+        
+        margin-top: 5%;
+
+        gap: 5rem
+}
+
+
+.Encapsulated-Links{
 
     display: flex;
 
@@ -165,14 +201,20 @@ h1{
 
 .Link-Contact:hover{
 
-    border: #fff .2px solid
+    border: #fff .2px solid;
+
+    color: #000;
+
+    background: #fff;
 }
 
 
 
 section{
 
-    margin-bottom: 25%
+    margin-bottom: 25%;
+
+    
 }
 
 
@@ -190,7 +232,9 @@ section{
 
     width: 2.5rem;
 
-    height: 2.5rem
+    height: 2.5rem;
+
+    filter: drop-shadow(1px  1px 1px #abb2b9); 
 }
 
 
@@ -202,29 +246,78 @@ h2{
 }
 
 
+.g{
+
+    width: 100%;
+
+    background: #270852;
+
+    padding: 3rem 3rem 3rem 3rem;
+
+    border-radius: 5%;
+
+    transition: box-shadow .8s ease-in-out;
+    
+
+}
+
+.g:hover{
+
+    box-shadow: 0 0 .4rem #fff
+}
+
+
+
 .Section-Proyects{
 
     display: flex;
 
-    gap: 1.5rem;
+    width: 100%;
+
+    gap: 3rem;
 
     border-radius: 1.5%;
 
-    padding: 1.5rem 3rem 3rem 3rem;
-
     margin-top: 5%;
 
-    background: #270852;
-
-    transition: box-shadow .8s ease-in-out;
+   
     
 }
 
+.About-Photo{
 
-.Section-Proyects:hover{
+    width: 21.5rem;
 
-    box-shadow: 0 0 .4rem #fff
+    height: 16.5rem;
+
+    border-radius: 3%;
+
+    transform: rotate(370deg);
+
+    margin-top: 5%;
+
+    outline-width: .1rem;
+
+    outline-color: #abb2b9;
+
+    outline-style: solid;
+
+    outline-offset: 10px;
+
+    
 }
+
+#Sobre-Mi{
+
+    display: flex;
+
+    gap: 4rem;
+
+    order: -1;
+
+    margin: 0;
+}
+
 
 
 
@@ -234,9 +327,13 @@ h3{
 
     margin-bottom: 5%;
     
-    text-shadow: 0 0 1px #FFFDD0;
 }
 
+.Parrafomi{
+
+    font-size: 1.2REM;
+
+}
 
 .Paragraph-Section-Proyects{
 
@@ -266,7 +363,9 @@ h3{
 
     gap: .5rem;
 
-    margin-top: 8% 
+    margin-top: 3%;
+
+    margin-bottom: 25%;
 }
 
 
@@ -350,6 +449,7 @@ time, .Location{
 form{
 
     background: #270852;
+    
 
     margin: auto;
 
@@ -378,12 +478,42 @@ form:hover{
 
 .Title-Form{
 
-    font-size: 2rem;
+    font-size: 2.2rem;
 
     margin-bottom: 10%;
 
-    text-shadow: 0 0 1px #FFFDD0;
+    animation-name: Levitacion;
+
+    animation-duration: 1s;
+
+    animation-iteration-count: infinite;
+
+    animation-timing-function: ease-in-out;
+    
+
 }
+
+@keyframes Levitacion {
+    
+    0% {
+
+        transform: translateY(0);
+
+    } 50% {
+
+        transform: translateY(-10px);
+    } 100% {
+
+        transform: translateY(0);
+    }
+}
+
+
+hr{
+
+    margin-bottom: 12%;
+}
+
 
 label{
 
@@ -407,13 +537,19 @@ input, textarea{
 
     width: 100%;
 
-    border: #abb2b9 solid 2.5px;
+    border-bottom: #abb2b9 solid 2px;
+
+    border-right: #abb2b9 solid 2px;
 
     outline: none;
 
     border-radius: 2%;
 
-    background: #fff;
+    background: #2C1A4A;
+
+    color: #fff;
+
+    margin-top: 1.5%;
 }
 
 textarea{
@@ -544,10 +680,31 @@ input:focus, textarea:focus, .Button-Send:hover{
         width: 95%;
     }
     
-    .Section-Proyects{
+    
+    #Sobre-Mi{
 
-        padding: 1.5rem 2rem 2rem 2rem;
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 4rem;
+
     }
+
+    .About-Photo{
+
+        width: 12rem;
+
+        height: 12rem;
+
+        margin: auto;
+
+        order: -1;
+
+        margin-top: 16%;
+    }
+
+
     .Link-Contact{
 
         padding: .5rem 1rem .5rem 1rem;
@@ -642,6 +799,11 @@ input:focus, textarea:focus, .Button-Send:hover{
 
         width: 40%;
 
+    }
+
+    .g{
+
+        width: 80%;
     }
 }
 
