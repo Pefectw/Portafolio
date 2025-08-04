@@ -92,6 +92,11 @@ a{
     color: #40E0D0
 }
 
+.Links-Navigation-animation{
+
+    color: #40E0D0;
+}
+
 
 .Profile-Photo{
 
@@ -117,7 +122,7 @@ h1{
 
 .Image-Project{
 
-    width:100%;
+    width: 100%;
 
     height: auto;
 
@@ -139,24 +144,19 @@ h1{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* La sombra se intensifica */
 }
 
-.a {
-
-        display: block; 
-
-        width: 100%
-}
-
 .Encapsulated-Links-Proyects{
 
-    width: fit-content; 
+    width: 100%; 
 
-    display: flex;
-
-    margin: 0 auto;   
+    display: flex;  
         
     margin-top: 5%;
 
-    gap: 2rem
+    gap: .3rem;
+
+    align-items: center;
+
+    
 
 }
 
@@ -200,13 +200,25 @@ h1{
 }
 
 
-.Link-Contact:hover{
+.Link-Contact:hover, .Button-Send:hover{
 
     border: #fff .2px solid;
 
     color: #000;
 
     background: #fff;
+
+}
+
+
+.Button-Send:hover{
+
+    border: #000 1.5px solid;
+
+    color: #000;
+
+    background: #fff;
+
 }
 
 
@@ -251,20 +263,24 @@ h2{
 
     width: 100%;
 
-    background: #270852;
+    min-width: 50%;
+
+    background: linear-gradient(#1B0534, #270852);
 
     padding: 3rem 3rem 3rem 3rem;
 
     border-radius: 2%;
 
     transition: box-shadow .8s ease-in-out;
-    
+
 
 }
 
 .g:hover{
 
-    box-shadow: 0 0 .4rem #fff
+    box-shadow: 0 0 .4rem #fff;
+
+
 }
 
 
@@ -273,7 +289,7 @@ h2{
 
     display: flex;
 
-    width: 90%;
+    width: 95%;
 
     gap: 3rem;
 
@@ -281,7 +297,6 @@ h2{
 
     margin-top: 5%;
 
-   
     
 }
 
@@ -303,12 +318,13 @@ h2{
 
     outline-style: solid;
 
-    outline-offset: 10px;
-
+    outline-offset: 10px
     
 }
 
-#Sobre-Mi{
+
+
+#About-Me{
 
     display: flex;
 
@@ -449,14 +465,13 @@ time, .Location{
 
 form{
 
-    background: #270852;
-    
+    background: linear-gradient(#1B0534, #270852);
 
     margin: auto;
 
     width: 45%;
 
-    padding: 3% 8% 3% 8% ;
+    padding: 3% 8% 4.5% 8% ;
 
     border-radius: 5%;
 
@@ -494,6 +509,19 @@ form:hover{
 
 }
 
+.Link-Information{
+
+    margin-left: auto;
+}
+
+
+
+.Icon-Information:hover{
+
+    filter: drop-shadow(0px 0px .8px #abb2b9);
+}
+
+
 @keyframes Levitacion {
     
     0% {
@@ -524,7 +552,7 @@ label{
     
 }
 
-input, textarea{
+input{
 
     font-family: "Afo";
 
@@ -538,15 +566,15 @@ input, textarea{
 
     width: 100%;
 
-    border-bottom: #abb2b9 solid 2px;
+    border-bottom: #000 solid 2px;
 
-    border-right: #abb2b9 solid 2px;
+    border-right: #000 solid 2px;
 
     outline: none;
 
-    border-radius: 2%;
+    border-radius: 9999px;
 
-    background: #2C1A4A;
+    background: #fff;
 
     color: #fff;
 
@@ -562,17 +590,19 @@ textarea{
     min-width: 100%;
 
     min-height: 6rem;
+
+    border-radius: 1%;
 }
 
 
-input:focus, textarea:focus, .Button-Send:hover{
+input:focus, textarea:focus{
 
     box-shadow: 0 0 .3rem #abb2b9
 }
 
 .Button-Send{
 
-    width: 30%;
+    width: 50%;
 
     display: block;
 
@@ -584,9 +614,9 @@ input:focus, textarea:focus, .Button-Send:hover{
     
     font-family: "Afo";
 
-    background: #fff;
+    background: #2C1A4A;
 
-    color: #000;
+    color: #fff;
 
     cursor: pointer;
 
@@ -727,7 +757,7 @@ input:focus, textarea:focus, .Button-Send:hover{
 
     h2{
 
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
 
@@ -759,6 +789,11 @@ input:focus, textarea:focus, .Button-Send:hover{
         flex-direction: column
     }
 
+    .g{
+
+        padding: 2.5rem;
+
+    }
     
     .Image-Project{
 
@@ -774,22 +809,7 @@ input:focus, textarea:focus, .Button-Send:hover{
     }
 
     
-    .a {
-        display: block; 
-
-        width: 100%; 
-    }
-
-    .Encapsulated-Links-Proyects{
-
-        width: fit-content; 
-
-        margin: 0 auto;   
-        
-        margin-top: 10%;
-
-        gap: 2rem;
-    }
+    
 
     form{
 
@@ -858,24 +878,6 @@ input:focus, textarea:focus, .Button-Send:hover{
 
     
    
-    .a {
-
-        display: block; 
-
-        width: 100%
-    }
-
-    .Encapsulated-Links-Proyects{
-
-        width: fit-content; 
-
-        margin: 0 auto;   
-        
-        margin-top: 5%;
-
-        gap: 7rem
-    }
-
     form{
 
         width:70% ;
@@ -915,24 +917,7 @@ input:focus, textarea:focus, .Button-Send:hover{
         padding-inline-start: 0%;
     }
 
-    .a {
-
-        display: block; 
-
-        width: 100%
-    }
-
-    .Encapsulated-Links-Proyects{
-
-        width: fit-content; 
-
-        margin: 0 auto;   
-        
-        margin-top: 5%;
-
-        gap: 7rem
-    }
-
+    
 
     form{
 
