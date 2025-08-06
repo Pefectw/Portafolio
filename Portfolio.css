@@ -571,14 +571,14 @@ input:focus, textarea:focus{
     }
 
     h1{
-        font-size: 2.3rem; 
+        font-size: 2.2rem; 
 
         white-space: wrap;
     }
 
     h2{
 
-        font-size: 2.2rem
+        font-size: 2rem
     }
 
     ul{
@@ -606,6 +606,8 @@ input:focus, textarea:focus{
         height: 12rem;
 
         order: -1;
+
+        transform: rotate(0);
 
         margin-top: 20%
     }
@@ -732,7 +734,7 @@ input:focus, textarea:focus{
 }
 
 
-@media (min-width: 1024px) and (max-width: 1400px) {
+@media (min-width: 1024px) and (max-width: 2560px) {
 
 
     .Section-Proyects{
@@ -784,8 +786,6 @@ input:focus, textarea:focus{
         order: -1;
 
         width: 35%;
-
-        transform: rotate(0);
 
         margin-top: 12%;
     }
