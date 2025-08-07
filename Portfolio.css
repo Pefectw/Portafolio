@@ -115,6 +115,11 @@ header{
 }
 
 
+.Links-Navigation:hover{
+
+    color: #40E0D0;
+}
+
 /* Sección de presentación -------------------------------------------------------------------------------*/
 
 
@@ -429,7 +434,7 @@ form:hover{
 
 .Title-Form{
 
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 
     margin-bottom: 10%;
 
@@ -497,7 +502,7 @@ input:focus, textarea:focus{
 
     width: 100%;
 
-    border: #1B0534 2px solid;
+    border: #1B0534 .2px solid;
 
     margin-top: 15%;
 
@@ -537,25 +542,6 @@ input:focus, textarea:focus{
 }
 
 
-/* Animación -------------------------------------------------------------------------------*/
-
-@keyframes Levitacion {
-    
-    0% {
-
-        transform: translateY(0);
-
-    } 50% {
-
-        transform: translateY(-10px);
-
-    } 100% {
-
-        transform: translateY(0);
-    }
-}
-
-
 /* Responsive design -----------------------------------------------------------------------*/
 
 @media (min-width: 330px) and (max-width: 630px) {
@@ -571,16 +557,22 @@ input:focus, textarea:focus{
     }
 
     h1{
-        font-size: 2.2rem; 
+        font-size: 2.3rem; 
 
         white-space: wrap;
     }
 
     h2{
 
-        font-size: 2rem
+        font-size: 2.1rem
     }
 
+
+    h3{
+
+        font-size: 1.8rem;
+    }
+    
     ul{
         padding-inline-start: 0%  
     }
@@ -734,7 +726,7 @@ input:focus, textarea:focus{
 }
 
 
-@media (min-width: 1024px) and (max-width: 2560px) {
+@media (min-width: 1024px) and (max-width: 1400px) {
 
 
     .Section-Proyects{
