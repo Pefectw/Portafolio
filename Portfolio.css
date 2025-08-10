@@ -2,7 +2,7 @@ body{
 
     background: #1b0534; 
 
-    width: 50%;
+    width: 48%;
 
     margin: auto;
 
@@ -19,15 +19,7 @@ html{
 }
 
 
-.Important-Words{
-
-    color: #40E0D0
-}
-
-
 p{
-
-    font-size: 1.3rem;
 
     text-wrap: pretty;
 
@@ -46,8 +38,6 @@ ul{
 li{
 
     list-style: none;
-
-    font-size: 1.3rem
 }
 
 
@@ -61,7 +51,7 @@ a{
 
 section{
 
-    margin-bottom: 25%
+    margin-bottom: 25%;
 }
 
 
@@ -85,6 +75,11 @@ button, #Button-Restart{
 
     padding: none
 }
+
+.Button-Contact, .Paragraph-Section-Proyects, .Paragraph-About-Me, time, .Location, label, .Button-Send, .Copyright, li, p{
+
+    font-size: 1.3rem
+} 
 
 
 /* Barra de navegación -------------------------------------------------------------------------------*/
@@ -115,7 +110,7 @@ header{
 }
 
 
-.Links-Navigation:hover{
+.Links-Navigation:hover, .Important-Words{
 
     color: #40E0D0;
 }
@@ -169,7 +164,7 @@ h1{
 
     font-size: 1.4rem;
     
-    margin-top:.5rem
+    margin-top: .5rem
 }
 
 
@@ -177,29 +172,29 @@ h1{
 
     display: flex;
 
-    gap: 1.2rem
+    gap: 1.2rem;
+
+    margin-top: 3%;
 }
 
 
-.Link-Contact{
+.Button-Contact{
 
   display: flex; 
 
   gap: .5rem;
 
-  font-size: 1.2rem;
-
   background: #2C1A4A;
 
   border-radius: 9800px;
 
-  padding: .6rem .9rem .6rem .9rem;
+  padding: .6rem 1rem .6rem 1rem;
 
   border: #1b0534 .2px solid
 }
 
 
-.Link-Contact:hover, .Button-Send:hover {
+.Button-Contact:hover, .Button-Send:hover {
 
     border: #000 .2px solid;
 
@@ -221,21 +216,7 @@ h1{
 
     border-radius: 1.5%;
 
-    margin-top: 5%  
-}
-
-
-.Image-Project{
-
-    width: 100%;
-
-    height: auto;
-
-    border-radius: 1%;
-
-    box-shadow: 0 0 .5rem #1b0534;
-   
-    border-radius: 2%
+    padding: 5%
 }
 
 
@@ -243,7 +224,7 @@ h1{
 
     width: 65%;
 
-    min-width: 50%;
+    min-width: 65%;
 
     background: linear-gradient(#1B0534, #270852);
 
@@ -256,14 +237,26 @@ h1{
     margin: auto
 }
 
-.Card-Projects:hover{
 
-    box-shadow: 0 0 .4rem #fff
+.Card-Projects:hover, form:hover{
+
+    box-shadow: 2px 2px 3px #abb2b9;
 }
+
+
+.Image-Project{
+
+    width: 100%;
+
+    height: auto;
+   
+    border-radius: 1%
+}
+
 
 h2{
 
-    font-size: 2.7rem;
+    font-size: 3rem;
 
     margin: 0
 }
@@ -271,37 +264,15 @@ h2{
 
 h3{
 
-    font-size: 1.7rem;
+    font-size: 2rem;
 
-    margin-bottom: 4%
-}
-
-
-.Paragraph-Section-Proyects{
-
-    font-size: 1.2rem;
-
-    margin-bottom: 7%
-}
-
-
-.Section-Links-Proyects{
-
-    width: 100%; 
-
-    display: flex;  
-        
-    margin-top: 5%;
-
-    gap: .3rem;
-
-    align-items: center
+    margin-bottom: 0
 }
 
 
 .Link-Information{
 
-    margin-left: auto;
+    margin-left: auto
 }
 
 
@@ -317,16 +288,9 @@ h3{
 
     display: flex;
 
-
     gap: 4.5rem;
 
     align-items: center
-}
-
-
-.Paragraph-About-Me{
-
-    font-size: 1.2rem;
 }
 
 
@@ -358,49 +322,98 @@ h3{
 }
 
 
-time, .Location{
+time, .Location, .Copyright{
 
-    color: #abb2b9;
-    
-    font-size: 1.2rem
+    color: #abb2b9
 }
+
+
+.Subtitle-Experience{
+
+    margin-bottom: 2.8%;
+}
+
 
 
 /* Sección de habilidades -------------------------------------------------------------------------------*/
 
-.Skills-Grid{
 
-    display: grid;
+@keyframes slide {
+  from {
 
-    grid-template-columns: repeat(3,.3fr);
+    transform: translateX(0);
+  } to {
 
-    width: fit-content;
-
-    margin: auto;
-
-    margin-top: 5%
+    transform: translateX(-100%);
+  }
 }
 
+
+.logos{
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  position: relative;
+
+  padding: 4%;
+
+  background:#270852;
+
+  margin-top: 5%;
+}
+
+
+.logos:before,
+.logos:after{
+
+  position: absolute;
+
+  top: 0;
+
+  width: 250px;
+
+  height: 100%;
+
+  content: "";
+
+  z-index: 2
+}
+
+
+.logos:before{
+
+  left: 0;
+}
+
+
+.logos:after{
+
+  right: 0
+}
+
+
+.logos:hover .logos-slide {
+
+  animation-play-state: paused
+}
+
+.logos-slide {
+
+  display: inline-block;
+
+  animation: 35s slide infinite linear
+}
+
+.Skills-Icons:hover{
+
+    transform: scale(1.2);
+}
 
 .Skills-Icons{
 
-    background: #270852;
-
-    padding: 1.8rem;
-
-    border-radius: 2%
-}
-
-
-#Button-Restart{
-
-    display: block;
-
-    margin: auto;
-
-    margin-top: 5%; 
-
-    cursor:pointer
+    padding: 1rem
 }
 
 
@@ -412,29 +425,17 @@ form{
 
     margin: auto;
 
-    margin-bottom: 10%;
-
     width: 50%;
 
     padding: 3% 8% 3% 8% ;
 
     border-radius: 5%;
 
-    transition: box-shadow .8s ease-in-out;
-
-    border: #abb2b9 solid .1rem
-}
-
-
-form:hover{
-
-    box-shadow: 0 0 .5rem #abb2b9
+    transition: box-shadow .8s ease-in-out
 }
 
 
 .Title-Form{
-
-    font-size: 2.5rem;
 
     margin-bottom: 10%;
 
@@ -454,17 +455,9 @@ hr{
 }
 
 
-label{
-
-    font-size: 1.2rem
-}
-
-
 input, textarea{
 
     font-family: "Afo";
-
-    font-size: 1rem;
     
     display: block;
 
@@ -474,9 +467,9 @@ input, textarea{
 
     width: 100%;
 
-    border-radius: 1%;
+    border-radius: 1.5%;
 
-    margin-top: 1%;
+    margin-top: .8%;
 }
 
 
@@ -500,13 +493,11 @@ input:focus, textarea:focus{
 
 .Button-Send{
 
-    width: 100%;
+    width: 101%;
 
     border: #1B0534 .2px solid;
 
     margin-top: 15%;
-
-    font-size: 1.3rem;
 
     background: #2C1A4A;
 
@@ -516,7 +507,9 @@ input:focus, textarea:focus{
 
     border-radius: 9990px;
 
+    padding: .5rem
 }
+
 
 /* Pie de página-----------------------------------------------------------------------------*/
 
@@ -534,14 +527,6 @@ input:focus, textarea:focus{
 }
 
 
-.Copyright{
-
-    color: #abb2b9;
-
-    font-size: 1.2rem
-}
-
-
 /* Responsive design -----------------------------------------------------------------------*/
 
 @media (min-width: 330px) and (max-width: 630px) {
@@ -555,11 +540,9 @@ input:focus, textarea:focus{
 
         width: 100%
     }
-
+    
     h1{
-        font-size: 2.3rem; 
-
-        white-space: wrap;
+        font-size: 2.3rem
     }
 
     h2{
@@ -567,10 +550,9 @@ input:focus, textarea:focus{
         font-size: 2.1rem
     }
 
-
     h3{
 
-        font-size: 1.8rem;
+        font-size: 1.6rem
     }
     
     ul{
@@ -581,14 +563,19 @@ input:focus, textarea:focus{
         
         font-size: 1rem
     }
+
+     .Paragraph-Presentation{
+
+        font-size: 1.3rem
+    }
     
-    .Section-About-Me{
+    .Section-About-Me, .Section-Proyects{
 
         display: flex;
 
         flex-direction: column;
 
-        gap: 2rem
+        gap: 1.5rem
     }
 
     .Photo-About-Me{
@@ -602,21 +589,6 @@ input:focus, textarea:focus{
         transform: rotate(0);
 
         margin-top: 20%
-    }
-
-    .Link-Contact{
-
-        padding: .5rem 1.2rem .5rem 1.2rem;
-    }
-
-    .Paragraph-Presentation{
-
-        font-size: 1.3rem
-    }
-
-    .Section-Proyects{
-
-        flex-direction: column
     }
 
     .Card-Projects{
@@ -647,7 +619,7 @@ input:focus, textarea:focus{
 
         padding: .3rem 1rem .3rem 1rem;
 
-        width: 100%
+        width: 102%
     }
 }
 
@@ -656,6 +628,11 @@ input:focus, textarea:focus{
     body{
 
         width: 70%;
+    }
+
+    .Scroll-Bar-Navigation{
+
+       padding-inline-start: 0% 
     }
 
     header{
@@ -667,31 +644,19 @@ input:focus, textarea:focus{
         font-size: 1.3rem
     }
 
+    h1{
+
+        font-size: 3.2rem
+    }
+
     .Section-Proyects{
 
-        width: 85%;
-
-        flex-direction: column;
+        width: 85%
     }
 
-    .Image-Project{
-
-        width: 100%;
-
-        border-radius: 2%;
-    }
-
-    
     .Card-Projects{
 
-        width: 80%;
-
-        margin: auto;
-    }
-
-    .Scroll-Bar-Navigation{
-
-       padding-inline-start: 0% 
+        width: 80%
     }
 
     .Section-About-Me{
@@ -714,25 +679,14 @@ input:focus, textarea:focus{
         margin-top: 12%;
     }
 
-
-    h1{
-
-        font-size: 3.2rem;
-    }
     form{
 
-        width: 70% 
+        width: 60% 
     }
 }
 
 
 @media (min-width: 1024px) and (max-width: 1400px) {
-
-
-    .Section-Proyects{
-
-        flex-direction: column
-    }
 
 
     li{
@@ -773,13 +727,14 @@ input:focus, textarea:focus{
     }
 
      
+   
     .Photo-About-Me{
 
-        order: -1;
+        width: 40%;
 
-        width: 35%;
+        transform: rotate(0);
 
-        margin-top: 12%;
+        order: -1
     }
 
     .Section-About-Me{
@@ -788,7 +743,9 @@ input:focus, textarea:focus{
 
         flex-direction: column;
 
-        gap: 2rem
+        gap: 2rem;
+
+        padding-top: 10%;
     }
    
 }

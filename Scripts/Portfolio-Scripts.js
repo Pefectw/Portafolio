@@ -1,5 +1,5 @@
 
-// Modificación en la barra de navegación
+// Animación en la barra de navegación
 const BarraNavegacion = document.getElementById('header');
 
 window.addEventListener('scroll', () => {
@@ -13,3 +13,6 @@ window.addEventListener('scroll', () => {
     }
 })
 
+
+ var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
