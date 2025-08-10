@@ -140,11 +140,15 @@ header{
 
 .Profile-Photo{
 
-    width: 7rem;
+    width: 120px; 
 
-    height: 7rem;
+    height: 120px; 
 
-    border-radius: 50%;
+    border-radius: 50%; 
+
+    object-fit: cover; /* La imagen cubrirá el círculo sin deformarse */
+
+    display: block;
 
     box-shadow: 0 0 .3rem #abb2b9;
 
@@ -296,11 +300,11 @@ h3{
 
 .Photo-About-Me{
 
-    width: 100%;
-
-    height: 16rem;
-
-    border-radius: 3%;
+    width: 250px; /* Nuevo tamaño del ancho */
+    height: 250px; /* Nuevo tamaño de la altura (igual al ancho para que sea cuadrada) */
+    border-radius: 10px; /* Esquinas ligeramente redondeadas, ajústalo a tu gusto */
+    object-fit: cover; /* Sigue siendo crucial para evitar la deformación */
+    display: block;
 
     transform: rotate(370deg);
 
